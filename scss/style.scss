@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+$color-dark: #371A1D;
+$color-light: #CFAD9D;
+$text-dark: rgba(0, 0, 0, 0.8);
+$text-light: rgba(255, 255, 255, 0.8);
+$font-title: 'Playfair Display', serif;
+$font-subtext: 'Lato', sans-serif;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $font-subtext;
+    position: fixed;
+    width: 100%;
+    padding: 20px 50px 0 0;
+}
+
+svg {
+    width: 50px;
+    height: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    p {
+        font-size: 1.1rem;
+        font-weight: bold;
+        letter-spacing: 5px;
+        color: $text-light;
+        margin-left: 15px;
+    }
+}
+
+nav {
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+        li {
+            margin-left: 2.5rem;
+
+            a {
+                text-decoration: none;
+                color: $text-light;
+
+                div {
+                    background: rgba(0, 0, 0, 0.2);
+                    padding: 5px 18px;
+                }
+            }
+        }
+    }
+}
+
+.hero {
+    height: 100vh;
+    height: 100svh;
+    background: $color-dark;
+    display: flex;
+}
+
+.hero-text {
+    width: 50%;
+    height: 100%;
+    color: $text-light;
+    position: relative;
+}
+
+.text-container {
+    margin-top: 9rem;
+    position: absolute;
+    right: 0.5rem;
+    width: min-content;
+
+    & > h1:first-child {
+        width: fit-content;
+        white-space: nowrap;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        font-family: $font-title;
+        font-weight: 500;
+
+        .title-positive {
+            color: $color-dark;
+            position: absolute;
+            right: -0.8rem;
+            transform: translateX(100%);
+        }
+    }
+
+    p {
+        margin-top: 15px;
+        font-family: $font-subtext;
+        color: $text-light;
+        width: 90%;
+        line-height: 1.8rem;
+    }
+
+    button {
+        border: 1px solid $text-light;
+        background: none;
+        color: $text-light;
+        padding: 1em 2em;
+        margin-top: 40px;
+    }
+}
+
+.hero-images {
+    width: 50%;
+    height: 100%;
+}
+
+ul[data-slides] {
+    list-style: none;
+    height: 100%;
+
+    li {
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

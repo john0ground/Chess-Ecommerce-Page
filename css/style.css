@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  position: fixed;
+  width: 100%;
+  padding: 20px 50px 0 0;
+}
+
+svg {
+  width: 50px;
+  height: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  margin-left: 2.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+nav ul li a div {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 5px 18px;
+}
+
+.hero {
+  height: 100vh;
+  height: 100svh;
+  background: #371A1D;
+  display: flex;
+}
+
+.hero-text {
+  width: 50%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+}
+
+.text-container {
+  margin-top: 9rem;
+  position: absolute;
+  right: 0.5rem;
+  width: min-content;
+}
+.text-container > h1:first-child {
+  width: fit-content;
+  white-space: nowrap;
+}
+.text-container h1 {
+  font-size: 3.5rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+}
+.text-container h1 .title-positive {
+  color: #371A1D;
+  position: absolute;
+  right: -0.8rem;
+  transform: translateX(100%);
+}
+.text-container p {
+  margin-top: 15px;
+  font-family: "Lato", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  line-height: 1.8rem;
+}
+.text-container button {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 1em 2em;
+  margin-top: 40px;
+}
+
+.hero-images {
+  width: 50%;
+  height: 100%;
+}
+
+ul[data-slides] {
+  list-style: none;
+  height: 100%;
+}
+ul[data-slides] li {
+  height: 100%;
+}
+ul[data-slides] li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
