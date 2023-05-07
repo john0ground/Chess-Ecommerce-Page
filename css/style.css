@@ -71,12 +71,6 @@ nav ul li a div {
   position: relative;
 }
 
-.button, .text-container button {
-  color: rgba(255, 255, 255, 0.8);
-  padding: 1em 2em;
-  margin-top: 40px;
-}
-
 .text-container {
   margin-top: 9rem;
   position: absolute;
@@ -108,6 +102,9 @@ nav ul li a div {
   line-height: 1.8rem;
 }
 .text-container button {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 1em 2em;
+  margin-top: 40px;
   border: 1px solid rgba(255, 255, 255, 0.8);
   background: none;
 }
@@ -189,6 +186,102 @@ ul[data-slides] .slide[data-active] {
 .quote > p:nth-child(2) {
   align-self: end;
   font-family: "Lato", sans-serif;
+}
+
+.classic-boards {
+  display: flex;
+  justify-content: start;
+  padding: 100px;
+}
+
+.images {
+  min-width: 430px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 90px;
+}
+.images > :first-child {
+  margin-bottom: 60px;
+}
+.images > :nth-child(2) {
+  align-self: end;
+}
+.images .img-container {
+  width: 350px;
+  height: 350px;
+  position: relative;
+}
+.images .img-container * {
+  position: absolute;
+  inset: 0;
+}
+.images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.images .box-background {
+  width: 100%;
+  height: 100%;
+  background: #BF927D;
+  z-index: -1;
+  left: 25px;
+  top: -25px;
+}
+
+.details {
+  position: relative;
+}
+.details h2 {
+  font-family: "Playfair Display", serif;
+  color: #371A1D;
+  font-size: 2.1rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 3rem;
+  margin-top: 7rem;
+}
+.details h2 span {
+  font-family: "Lato", sans-serif;
+  color: #BF927D;
+}
+.details .details-para {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 25px;
+  line-height: 2rem;
+  width: 85%;
+}
+.details button {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #BF927D;
+  border: none;
+  padding: 1em 1.7em;
+}
+.details button p {
+  color: #371A1D;
+  font-weight: bold;
+  font-size: 18px;
+}
+.details .pawn-bg {
+  height: 350px;
+  opacity: 20%;
+  position: absolute;
+  top: -100px;
+  left: -170px;
+  z-index: -1;
+}
+.details .king-bg {
+  opacity: 20%;
+  height: 400px;
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  top: 180px;
 }
 
 /*# sourceMappingURL=style.css.map */
