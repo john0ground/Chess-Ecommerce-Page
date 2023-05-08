@@ -20,7 +20,7 @@ header {
   position: fixed;
   width: 100%;
   padding: 20px 50px 0 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 svg {
@@ -62,6 +62,8 @@ nav ul li a div {
   height: 100svh;
   background: #371A1D;
   display: flex;
+  position: relative;
+  z-index: 0;
 }
 
 .hero-text {
@@ -91,7 +93,7 @@ nav ul li a div {
   position: absolute;
   right: -0.8rem;
   transform: translateX(100%);
-  z-index: 1;
+  z-index: 2;
   transition: 0.4s ease-in-out;
 }
 .text-container p {
@@ -112,6 +114,9 @@ nav ul li a div {
 .hero-images {
   width: 50%;
   height: 100%;
+  position: fixed;
+  right: 0;
+  z-index: 1;
 }
 
 .carousel {
@@ -178,6 +183,8 @@ ul[data-slides] .slide[data-active] {
   font-size: 1.2rem;
   padding: 1.8rem 20% 1.2rem 20%;
   color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  z-index: 2;
 }
 .quote > p:first-child {
   width: fit-content;
@@ -192,6 +199,9 @@ ul[data-slides] .slide[data-active] {
   display: flex;
   justify-content: start;
   padding: 100px;
+  background: white;
+  position: relative;
+  z-index: 2;
 }
 
 .images {
@@ -288,6 +298,8 @@ ul[data-slides] .slide[data-active] {
   padding: 70px 100px 90px 100px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 2;
 }
 .costumer-reviews h2 {
   color: rgba(255, 255, 255, 0.8);
@@ -373,6 +385,10 @@ ul[data-slides] .slide[data-active] {
   left: 10px;
 }
 
+.limited-edition {
+  position: relative;
+  z-index: 2;
+}
 .limited-edition > *:not(img) {
   margin: 0 100px;
 }

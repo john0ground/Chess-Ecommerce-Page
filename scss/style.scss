@@ -28,7 +28,7 @@ header {
     position: fixed;
     width: 100%;
     padding: 20px 50px 0 0;
-    z-index: 2;
+    z-index: 3;
 }
 
 svg {
@@ -76,6 +76,8 @@ nav {
     height: 100svh;
     background: $color-dark;
     display: flex;
+    position: relative;
+    z-index: 0;
 }
 
 .hero-text {
@@ -106,7 +108,7 @@ nav {
             position: absolute;
             right: -0.8rem;
             transform: translateX(100%);
-            z-index: 1;
+            z-index: 2;
             transition: 0.4s ease-in-out;
         }
     }
@@ -131,6 +133,9 @@ nav {
 .hero-images {
     width: 50%;
     height: 100%;
+    position: fixed;
+    right: 0;
+    z-index: 1;
 }
 
 .carousel {
@@ -205,6 +210,8 @@ ul[data-slides] {
     font-size: 1.2rem;
     padding: 1.8rem 20% 1.2rem 20%;
     color: $text-dark;
+    position: relative;
+    z-index: 2;
 
     & > p:first-child {
         width: fit-content;
@@ -221,6 +228,9 @@ ul[data-slides] {
     display: flex;
     justify-content: start;
     padding: 100px;
+    background: white;
+    position: relative;
+    z-index: 2;
 }
 
 .images {
@@ -330,6 +340,8 @@ ul[data-slides] {
     padding: 70px 100px 90px 100px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 2;
 
     h2 {
         color: $text-light;
@@ -426,6 +438,9 @@ ul[data-slides] {
 }
 
 .limited-edition {
+    position: relative;
+    z-index: 2;
+
     & > *:not(img) {
         margin: 0 100px;
     }
