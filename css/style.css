@@ -284,4 +284,76 @@ ul[data-slides] .slide[data-active] {
   top: 180px;
 }
 
+.costumer-reviews {
+  background: #371A1D;
+  padding: 70px 100px;
+  display: flex;
+  flex-direction: column;
+}
+.costumer-reviews h2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 2.1rem;
+  text-align: center;
+}
+
+.costumers {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 40px;
+  gap: 50px;
+}
+
+.costumers li {
+  background: #CFAD9D;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 20rem;
+  position: relative;
+  padding: 30px;
+}
+.costumers li .costumer-image {
+  width: 130px;
+  height: 130px;
+  background: gray;
+  border-radius: 50%;
+}
+.costumers li p[data-review] {
+  text-align: center;
+  margin-top: 25px;
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.8rem;
+  margin-bottom: 25px;
+}
+
+.costumer-name {
+  width: 11rem;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-2%, 50%);
+}
+.costumer-name .name-front {
+  background: black;
+  padding: 3px 0 3px 0;
+}
+.costumer-name .name-front p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.costumer-name .name-bg {
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */

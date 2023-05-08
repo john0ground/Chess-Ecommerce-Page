@@ -1,8 +1,10 @@
 //  set header paddingLeft equal to hero margin;
-const heroTextContainer = document.querySelector('.text-container');
-const distanceFromLeft = heroTextContainer.offsetLeft;
-const logo = document.querySelector('.logo');
-logo.style.paddingLeft = `${distanceFromLeft}px`;
+window.onload = function() {
+    const heroTextContainer = document.querySelector('.text-container');
+    const distanceFromLeft = heroTextContainer.offsetLeft;
+    const logo = document.querySelector('.logo');
+    logo.style.paddingLeft = `${distanceFromLeft}px`;
+}
 
 const slideButtons = document.querySelectorAll('[data-carousel-button]');
 

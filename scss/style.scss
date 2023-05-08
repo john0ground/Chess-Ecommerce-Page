@@ -325,3 +325,82 @@ ul[data-slides] {
         top: 180px;
     }
 }
+
+.costumer-reviews {
+    background: $color-dark;
+    padding: 70px 100px;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+
+    h2 {
+        color: $text-light;
+        font-size: 2.1rem;
+        text-align: center;
+    }
+}
+
+.costumers {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 40px;
+    gap: 50px
+}
+
+.costumers li {
+    background: $color-light;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20rem;
+    position: relative;
+    padding: 30px;
+
+    .costumer-image {
+        width: 130px;
+        height: 130px;
+        background: gray;
+        border-radius: 50%;
+    }
+
+    p[data-review] {
+        text-align: center;
+        margin-top: 25px;
+        font-family: $font-subtext;
+        font-size: 1.1rem;
+        font-style: italic;
+        line-height: 1.8rem;
+        margin-bottom: 25px;
+    }
+}
+
+.costumer-name {
+    width: 11rem;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-2%, 50%);
+
+    .name-front {
+        background: black;
+        padding: 3px 0 3px 0;
+
+        p {
+            color: $text-light;
+            font-family: $font-subtext;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+    }
+
+    .name-bg {
+        background: $text-light;
+        width: 100%;
+        height: 100%;
+        z-index: -1; 
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+}
