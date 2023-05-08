@@ -328,10 +328,9 @@ ul[data-slides] {
 
 .costumer-reviews {
     background: $color-dark;
-    padding: 70px 100px;
+    padding: 70px 100px 90px 100px;
     display: flex;
     flex-direction: column;
-    // align-items: center;
 
     h2 {
         color: $text-light;
@@ -356,13 +355,35 @@ ul[data-slides] {
     align-items: center;
     max-width: 20rem;
     position: relative;
-    padding: 30px;
+    padding: 25px;
 
     .costumer-image {
         width: 130px;
         height: 130px;
-        background: gray;
         border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            position: relative;
+        }
+    }
+
+    img.jfk {
+        left: -40px;
+        top: -50px;
+        transform: scale(0.7);
+    }
+
+    img.greta {
+        left: -30px;
+        transform: scale(0.9);
+        top: -15px;
+    }
+
+    img.hans {
+        transform: scale(0.5);
+        left: -270px;
+        top: -110px;
     }
 
     p[data-review] {

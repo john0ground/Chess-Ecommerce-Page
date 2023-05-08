@@ -286,7 +286,7 @@ ul[data-slides] .slide[data-active] {
 
 .costumer-reviews {
   background: #371A1D;
-  padding: 70px 100px;
+  padding: 70px 100px 90px 100px;
   display: flex;
   flex-direction: column;
 }
@@ -312,13 +312,31 @@ ul[data-slides] .slide[data-active] {
   align-items: center;
   max-width: 20rem;
   position: relative;
-  padding: 30px;
+  padding: 25px;
 }
 .costumers li .costumer-image {
   width: 130px;
   height: 130px;
-  background: gray;
   border-radius: 50%;
+  overflow: hidden;
+}
+.costumers li .costumer-image img {
+  position: relative;
+}
+.costumers li img.jfk {
+  left: -40px;
+  top: -50px;
+  transform: scale(0.7);
+}
+.costumers li img.greta {
+  left: -30px;
+  transform: scale(0.9);
+  top: -15px;
+}
+.costumers li img.hans {
+  transform: scale(0.5);
+  left: -270px;
+  top: -110px;
 }
 .costumers li p[data-review] {
   text-align: center;
