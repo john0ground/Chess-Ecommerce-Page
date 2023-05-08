@@ -123,7 +123,7 @@ nav {
         color: $text-light;
         padding: 1em 2em;
         margin-top: 40px;
-        border: 1px solid $text-light;
+        border: 2px solid $text-light;
         background: none;
     }
 }
@@ -302,7 +302,6 @@ ul[data-slides] {
 
         p {
             color: $color-dark;
-            font-weight: bold;
             font-size: 18px;
         }
     }
@@ -423,5 +422,48 @@ ul[data-slides] {
         position: absolute;
         top: 10px;
         left: 10px;
+    }
+}
+
+.limited-edition {
+    & > *:not(img) {
+        margin: 0 100px;
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+    }
+
+    h1 {
+        color: #92DAEA;
+        font-size: 3.5rem;
+        padding-top: 4rem;
+    }
+
+    p {
+        color: $text-light;
+        font-size: 1.1rem;
+        font-family: $font-subtext;
+        margin-top: 2.5rem;
+        line-height: 1.8rem;
+        width: 43%;
+    }
+
+    p::first-letter {
+        font-size: 2.5rem;
+        color: #92DAEA;
+        font-family: $font-title;
+        margin-right: 0.2rem;
+    }
+
+    button {
+        color: $text-light;
+        padding: 1em 2em;
+        margin-top: 40px;
+        border: 2px solid #92DAEA;
+        background: none;
     }
 }
