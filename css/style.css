@@ -461,4 +461,18 @@ footer .copyright a {
   color: #CFAD9D;
 }
 
+button:hover,
+svg:hover,
+.logo:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(0.98);
+}
+
+button {
+  transition: transform 0.2s;
+}
+
 /*# sourceMappingURL=style.css.map */
