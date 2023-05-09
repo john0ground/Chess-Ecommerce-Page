@@ -26,8 +26,9 @@ header {
     font-family: $font-subtext;
     position: fixed;
     width: 100%;
-    padding: 20px 50px 0 0;
+    padding: 15px 50px 15px 0;
     z-index: 3;
+    // background: $color-dark;
 }
 
 svg {
@@ -531,7 +532,7 @@ svg:hover,
     cursor: pointer;
 }
 
-button:hover {
+button:not(button[data-carousel-button]):hover {
     transform: scale(0.98);
 }
 
