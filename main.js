@@ -30,17 +30,29 @@ slideButtons.forEach(button => {
     })
 });
 
+
+const header = document.querySelector('header');
+const text = document.querySelectorAll('[data-animate]');
+
 window.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
 
     const heroText = document.querySelector('.text-container');
-    const textRect = heroText.getBoundingClientRect();
+    const heroTextRect = heroText.getBoundingClientRect();
 
-    if(textRect.top <= 55) {
+    if(heroTextRect.top <= 55) {
         header.style.background = '#371A1D';
         header.style.boxShadow = '0 1px 2px 1px rgba(0, 0, 0, 0.4)';
     } else {
         header.style.background = 'none';
         header.style.boxShadow = 'none';
     }
+
+    //animate text
+    text.forEach(p => {
+        const distanceFromTop = p.getBoundingClientRect().top;
+    
+        if (distanceFromTop <= window.innerHeight / 1.3) {
+            p.classList.add('animate');
+        }
+    });
 });

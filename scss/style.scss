@@ -28,7 +28,7 @@ header {
     width: 100%;
     padding: 15px 50px 15px 0;
     z-index: 3;
-    transition: background-color 0.2s;
+    transition: background-color 0.3s;
 }
 
 svg {
@@ -538,4 +538,26 @@ button:not(button[data-carousel-button]):hover {
 
 button {
     transition: transform 0.2s;
+}
+
+[data-animate] {
+    visibility: hidden;
+}
+
+.animate {
+    position: relative;
+    visibility: visible;
+    animation: slide-down 0.5s ease-in;
+    // transition: opacity 0.3s ease-in;
+}
+
+@keyframes slide-down {
+    from {
+        top: -20px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 100%;
+    }
 }
