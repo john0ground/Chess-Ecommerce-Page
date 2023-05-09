@@ -29,3 +29,18 @@ slideButtons.forEach(button => {
         if (newIndex > 1) titlePositive.style.color = '#CFAD9D';
     })
 });
+
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+
+    const heroText = document.querySelector('.text-container');
+    const textRect = heroText.getBoundingClientRect();
+
+    if(textRect.top <= 55) {
+        header.style.background = '#371A1D';
+        header.style.boxShadow = '0 1px 2px 1px rgba(0, 0, 0, 0.4)';
+    } else {
+        header.style.background = 'none';
+        header.style.boxShadow = 'none';
+    }
+});
